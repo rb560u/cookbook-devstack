@@ -1,0 +1,15 @@
+DEST=<%= node["devstack"]["dest"] %>
+ENABLED_SERVICES+=<%= node["devstack"]["enabled_services"] %>
+ADMIN_PASSWORD=<%= node["devstack"]["admin_password"] %>
+MYSQL_PASSWORD=<%= node["devstack"]["mysql_password"] %>
+RABBIT_PASSWORD=<%= node["devstack"]["rabbit_password"] %>
+SERVICE_PASSWORD=<%= node["devstack"]["service_password"] %>
+SERVICE_TOKEN=<%= node["devstack"]["service_token"] %>
+HOST_IP=<%= node["devstack"]["host_ip"] %>
+LOGFILE=<%= node["devstack"]["logfile"] %>
+LOGDAYS=<%= node["devstack"]["logdays"] %>
+LOG_COLOR=<%= node["devstack"]["log_color"] %>
+SCREEN_LOGDIR=<%= node["devstack"]["screen_logdir"] %>
+API_RATE_LIMIT=<%= node["devstack"]["api_rate_limit"] %>
+APT_FAST=<%= node["devstack"]["apt_fast"] %>
+RECLONE=<%= node["devstack"]["reclone"] %>
