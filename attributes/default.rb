@@ -1,3 +1,4 @@
+# encoding: UTF-8
 #
 # Cookbook Name:: cookbook-devstack
 # Recipe:: default
@@ -18,21 +19,21 @@
 #
 
 # Directory for git clone
-default["devstack"]["git_repo"] = "/root/devstack"
+default['devstack']['git_repo'] = '/root/devstack'
 
 # Variables used in devstack/localrc
-default["devstack"]["dest"] = "/opt/stack"
-default["devstack"]["enabled_services"] = ",tempest"
-default["devstack"]["admin_password"] = "pass"
-default["devstack"]["mysql_password"] = "pass"
-default["devstack"]["rabbit_password"] = "pass"
-default["devstack"]["service_password"] = "pass"
-default["devstack"]["service_token"] = "servtoken"
-default["devstack"]["host_ip"] = "127.0.0.1"
-default["devstack"]["logfile"] = "stack.sh.log"
-default["devstack"]["logdays"] = "1"
-default["devstack"]["log_color"] = "False"
-default["devstack"]["screen_logdir"] = "/opt/stack/logs/screen"
-default["devstack"]["api_rate_limit"] = "False"
-default["devstack"]["apt_fast"] = "True"
-default["devstack"]["reclone"] = "yes"
+default['devstack']['dest'] = '/opt/stack'
+default['devstack']['enabled_services'] = ',tempest'
+default['devstack']['admin_password'] = 'pass'
+default['devstack']['mysql_password'] = 'pass'
+default['devstack']['rabbit_password'] = 'pass'
+default['devstack']['service_password'] = 'pass'
+default['devstack']['service_token'] = 'servtoken'
+default['devstack']['host_ip'] = '127.0.0.1'
+default['devstack']['logfile'] = 'stack.sh.log'
+default['devstack']['logdays'] = '1'
+default['devstack']['log_color'] = 'False'
+default['devstack']['screen_logdir'] = '/opt/stack/logs/screen'
+default['devstack']['api_rate_limit'] = 'False'
+default['devstack']['apt_fast'] = 'True'
+default['devstack']['reclone'] = 'yes'

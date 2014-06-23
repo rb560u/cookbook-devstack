@@ -1,3 +1,4 @@
+# encoding: UTF-8
 #
 # Cookbook Name:: cookbook-devstack
 # Recipe:: default
@@ -17,14 +18,14 @@
 # limitations under the License.
 #
 
-git_repo = node["devstack"]["git_repo"]
+git_repo = node['devstack']['git_repo']
 
-git "#{git_repo}" do
-  repository "https://github.com/openstack-dev/devstack.git"
-  reference "master"
+git node['devstack']['git_repo'] do
+  repository 'https://github.com/openstack-dev/devstack.git'
+  reference 'master'
   action :checkout
 end
 
 template "#{git_repo}/localrc" do
-  source "localrc.erb"
+  source 'localrc.erb'
 end
