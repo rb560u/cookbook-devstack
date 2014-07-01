@@ -3,7 +3,7 @@
 require 'chefspec'
 require 'chefspec/berkshelf'
 
-describe 'sact-client::default' do
+describe 'devstack::default' do
   it 'does something' do
     pending 'TODO: Add chefspec tests'
   end
